@@ -1,0 +1,55 @@
+/* Fonts */
+@font-face {
+  font-family: 'Lobster';
+  src: url(../fonts/Lobster-Regular.ttf); }
+@font-face {
+  font-family: 'Dancing Script';
+  src: url(../fonts/DancingScript-Regular.ttf); }
+/* Colors */
+.container {
+  font-family: "Dancing Script"; }
+  .container .content-page {
+    box-shadow: 3px 2px 8px 4px rgba(38, 38, 38, 0.8);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .container h1,
+  .container h2,
+  .container h3 {
+    font-family: "Lobster";
+    font-weight: 400;
+    text-transform: capitalize; }
+  .container h1 {
+    color: #00a25e;
+    text-align: center; }
+  .container h2 {
+    color: #1e99af;
+    text-indent: 20px; }
+  .container p {
+    font-family: "Dancing Script";
+    margin: 0 auto;
+    position: relative;
+    text-indent: 20px;
+    text-align: justify; }
+    .container p cite {
+      color: #505050;
+      font-size: 17px;
+      float: right;
+      padding-bottom: 20px; }
+      .container p cite a {
+        color: #1e99af;
+        text-decoration: none;
+        transition: all .3s ease-in-out; }
+        .container p cite a:hover {
+          color: #00a25e;
+          font-size: 25px;
+          transition: all .3s ease-in-out; }
+  .container ul {
+    font-family: "Dancing Script"; }
+    .container ul li {
+      list-style: circle; }
+  .container .input-group {
+    margin-bottom: 5px; }
+
+/*# sourceMappingURL=global.css.map */

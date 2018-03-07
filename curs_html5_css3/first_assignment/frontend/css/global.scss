@@ -1,0 +1,75 @@
+/* Fonts */
+@import "fonts";
+
+$main-title: "Lobster";
+$main-font: "Dancing Script";
+
+/* Colors */
+
+$gray-background-light: #e7e7e7;
+$gray-background-dark: #3b3b3b;
+$main-text-color: #2a2a2a;
+$elements-color: #00a25e;
+$elements-color-secondary: #1e99af;
+
+.container {
+    font-family: $main-font;
+    .content-page {
+        box-shadow: 3px 2px 8px 4px rgba(38, 38, 38, 0.8);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: $main-title;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    h1 {
+        color: $elements-color;
+        text-align: center;
+    }
+
+    h2 {
+        color: $elements-color-secondary;
+        text-indent: 20px;
+    }
+
+    p {
+        font-family: $main-font;
+        margin: 0 auto;
+        position: relative;
+        text-indent: 20px;
+        text-align: justify;
+
+        cite {
+            color: lighten($main-text-color, 15%);
+            font-size: 17px;
+            float: right;
+            padding-bottom: 20px;
+            a {
+                color: $elements-color-secondary;
+                text-decoration: none;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $elements-color;
+                    font-size: 25px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+    ul {
+        font-family: $main-font;
+        li {
+            list-style: circle;
+        }
+    }
+    .input-group {
+        margin-bottom: 5px;
+    }
+}
