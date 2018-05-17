@@ -21,7 +21,7 @@ header .navbar {
   margin-bottom: 40px;
   padding: 15px; }
 .container .svg-inline--fa {
-  color: rgba(0, 162, 94, 0.35); }
+  color: rgba(255, 184, 0, 0.35); }
 .container h1,
 .container h2,
 .container h3,
@@ -32,7 +32,7 @@ header .navbar {
   font-weight: 400;
   text-transform: capitalize; }
 .container h1 {
-  color: #00a25e;
+  color: #ffb800;
   text-align: center; }
 .container h2,
 .container h3,
