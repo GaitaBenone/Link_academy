@@ -1,7 +1,7 @@
 /* Fonts */
 @import "fonts";
 
-$font-second: "JosefinSans";
+$font-second: "AlfaSlabOne";
 $font-main: "Righteous";
 
 /* Colors */
@@ -10,12 +10,10 @@ $gray-background-light: #e7e7e7;
 $gray-background-dark: #3b3b3b;
 $main-text-color: #2a2a2a;
 $white-text-color: #fff;
-$elements-color: #ffb800;
-$elements-color-secondary: #1e99af;
 
 body {
-    padding: 20px;
     font-family: $font-main;
+    color: $white-text-color;
 }
 
 header {
@@ -24,18 +22,41 @@ header {
         box-shadow: 2px 2px 8px 2px rgba(38, 38, 38, 0.8);
     }
 }
-.container {
+.home-page-body {
+    background: url(../site_files/images/pictures/Index_Frontend.jpeg);
+}
+.cites-page-body {
+    background: url(../site_files/images/pictures/cites_page.jpeg);
+}
+.examples-page-body {
+    background: url(../site_files/images/pictures/examples_page.jpeg);
+}
+.conclusion-page-body {
+    background: url(../site_files/images/pictures/conclusion_page.jpg);
+}
+.content {
+    min-height: 675px;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    -o-filter: grayscale(0.9);
+    -ms-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+}
+.container-fluid {
+    padding: 30px;
+
     .content-page {
         border-radius: 2px;
         box-shadow: 2px 2px 8px 2px rgba(38, 38, 38, 0.8);
         margin-top: 40px;
         margin-bottom: 40px;
         padding: 15px;
-
-    }
-
-.svg-inline--fa {
-        color: transparentize($elements-color, 0.65);
+        background: rgba(0, 0, 0, 0.7);
     }
 
     h1,
@@ -46,11 +67,12 @@ header {
     h6 {
         font-family: $font-second;
         font-weight: 400;
-        text-transform: capitalize;
+        text-transform: none;
     }
+
     h1 {
-        color: $elements-color;
         text-align: center;
+        vertical-align: middle;
     }
 
     h2,
@@ -58,23 +80,30 @@ header {
     h4,
     h5,
     h6 {
-        color: $elements-color-secondary;
         text-indent: 20px;
     }
-    th {
-        text-transform: uppercase;
-        font-weight: 400;
-        vertical-align: middle;
+    ul{
+        list-style-type: none;
     }
-    td {
-        font-family: $font-second;
-        text-transform: capitalize;
-        font-weight: lighter;
-        vertical-align: middle !important;
+    .main-page-title {
+        display: block;
+        position: absolute;
+        top: 275px;
+        right: 325px;
+        width: 260px;
+        text-align: right;
     }
-    td:first-child {
-        font-family: $font-main;
+    .conclusion-title {
+        text-align: right;
     }
+    header .navbar {
+        background-color: transparentize($main-text-color, 0.6);
+        border-radius: 0;
+    }
+    .logo-wrapper {
+        box-shadow: -2px 5px 20px 0px rgba(#292929, 0.82);
+    }
+
     p {
         font-family: $font-main;
         margin: 0 auto;
@@ -83,4 +112,11 @@ header {
         text-align: justify;
 
     }
+}
+.bottom-footer-quote {
+    position: absolute;
+    bottom: 45px;
+    right: 15px;
+    font-size: em(12);
+    line-height: em(13);
 }
